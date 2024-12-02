@@ -92,5 +92,10 @@ class TrackManager:
             return
         save_tracks(updated_tracks)
         self.status_lbl.configure(text=f"Track {track_id} deleted successfully!", fg="green")
+if __name__ == "__main__":
+   window = tk.Tk()
+   fonts.configure()
+   TrackManager(window)
+   window.mainloop()
 
 
